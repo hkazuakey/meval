@@ -1,12 +1,12 @@
 #!/bin/bash
 
-OUTDIR=results${1}
+OUTDIR=results_mecab
 
 rm -rf ${OUTDIR}
 mkdir -p ${OUTDIR}
 
 outcount=0
 while IFS='' read -r line || [[ -n "$line" ]]; do
-    echo "${line}" | mecab > ${OUTDIR}/mecab_results_${outcount}.mecab
+    echo "${line}" | mecab > ${OUTDIR}/results_${outcount}.mecab
     outcount=$((++outcount))
-done < "$2"
+done < "$1"

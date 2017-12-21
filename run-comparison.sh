@@ -15,5 +15,5 @@ mkdir -p ${RESULTS_DIR}
 
 for i in {0..999}; do
     COMP_F_NAME=results_${i}.mecab
-    run.sh Scorer -f "1" -g ${G_BASE_DIR}/${COMP_F_NAME} -p ${P_BASE_DIR}/${COMP_F_NAME} > comp_results_${i}.txt
+    ./run.sh Scorer -f "1" -g ${G_BASE_DIR}/${COMP_F_NAME} -p ${P_BASE_DIR}/${COMP_F_NAME} > ${RESULTS_DIR}/comp_results_${i}.txt
 done

@@ -1,7 +1,12 @@
 package meval.parts;
 
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
+import java.util.stream.Stream;
+
 import toolbox.ToolBox;
 import toolbox.myio.WithReadLine;
 
@@ -89,7 +94,7 @@ final public class Corpus {
                              "    Pred: " + predCorpus.charNum + ToolBox.lsep +
                              ToolBox.lsep;
             System.err.println(message);
-            System.exit(0);
+//            System.exit(0);
         }
     }
     

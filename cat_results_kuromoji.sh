@@ -2,7 +2,7 @@
 
 FNO=$1
 
-echo "## ${FNO}"
+echo "## ${FNO} : \"`./get_text.py ${FNO}`\""
 echo "### Mecab"
 echo "\`\`\`"
 cat /home/kazu/Work/00_personal/sandbox/jma_comparison/results_mecab/results_${FNO}.mecab
